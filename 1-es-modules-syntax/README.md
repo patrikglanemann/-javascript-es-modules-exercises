@@ -18,8 +18,15 @@ Inside this file we have some functions defined: `sum`, `substract`, `divide` an
 6. Questions:
 
 - How can I import the whole module?
+  import \* as math from "./lib/math.js";
+
 - How can I export multiple things at once?
+  At the end of JS file:
+  export { sum, substract, multiply, divide };
+
 - Can I access variables and functions from a module if they were not exported?
+  Nope
+  All variables, functions, classes are visible to each other only within the same file. We are able to call functions from any other file only with export/import.
 
 Tips:
 
